@@ -1,0 +1,46 @@
+@using TomLeeWebApp3045.Models;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<Category>;
+
+@{
+    ViewData["Title"] = "Categories";
+}
+<h6><a href="Home">Home </a>
+    / @ViewData["Title"]</h6>
+
+<h1>Categories</h1>
+<br/>
+<p>Welcome to the Categories page!<br/></p>
+<p>Here you can search or edit your texts by category.<br/></p>
+
+@if( Model != null && Model.Count > 0)
+{
+    <table table class="table table-striped">
+        <thead>
+            <tr>
+                <th><h4>Name</h4></th>
+                <th><h4>Description</h4></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <td><b>@category.Name</b></td>
+                    <td>@category.Description</td>
+                    <td><a class = "btn btn-link" asp-controller="Categories" asp-action="Edit" asp-route-id="@category.CategoryId">Edit</a></td>
+                    <td><a class = "btn btn-link" asp-controller="Categories" asp-action="Delete" asp-route-id="@category.CategoryId">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <a class = "btn btn-primary" asp-controller="Categories" asp-action="Add">Add New Category</a>
+                </td>
+            </tr>
+    </table>    
+}
+

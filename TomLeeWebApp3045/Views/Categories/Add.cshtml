@@ -1,0 +1,57 @@
+@using TomLeeWebApp3045.Models
+@model TomLeeWebApp3045.Models.Category
+
+@{
+    ViewData["Title"] = "Add Category";
+}
+<h6><a href="/Home">Home </a>
+    /
+    <a href="/Categories"> Categories </a>
+    / @ViewData["Title"]
+</h6>
+
+
+<h3>Add Category</h3>
+
+
+
+<br />
+<p>Welcome to the Add Category page!<br /></p>
+<p>Here you can add a new category for your texts.<br /></p>
+<form method="post" asp-action="Add" asp-controller="Categories">
+    <div class="text-danger" asp-validation-summary="All"></div>
+
+    <div class="row md-3">
+        <div class="col-2">
+            <label asp-for="Name" class="col-form-label">
+                <h4>Name:</h4>
+            </label>
+        </div>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" id="name" name="name" value required>
+        </div>
+        <div class="col">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div class="row md-3">
+        <div class="col-2">
+            <label asp-for="Description" class="col-form-label">
+                <h4>Description:</h4>
+            </label>
+        </div>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" id="description" name="description" value
+                   required>
+        </div>
+        <div class="col">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+    <br />
+    <br />
+    <button type="submit" class="btn btn-primary">Add Category</button>
+
+</form>

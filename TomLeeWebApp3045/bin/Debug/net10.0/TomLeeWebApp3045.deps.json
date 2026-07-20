@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "TomLeeWebApp3045/1.0.0": {
+        "runtime": {
+          "TomLeeWebApp3045.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TomLeeWebApp3045/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

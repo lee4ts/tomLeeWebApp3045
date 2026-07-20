@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<h6>@ViewData["Title"]</h6>
+
+
+<h1>Hello, Library!</h1>
+<br/>
+<h2>Welcome to My ASP.NET Core Book Search App</h2>
+<p>Welcome to Tom Lee's ASP.NET Core Book Search web application, "Hello, Library!"<br/></p>
+<p>Someday, if you keep clicking, you might be able to login to access your library:</p>
+<form action="login" method ="post"> 
+    <label for="username">Username:</label>
+        <input type = "text" id = "username" 
+        name="username" required>
+    <label for= "password">Password:</label >
+        <input type ="password" id ="password" 
+        name = "password" required>
+    <a class="btn btn-primary" role="button">Login </a>
+</form>
+<br/>
+<p>Don't have an account? <a href="/Home/Register">Register here</a></p>
+<br/>
+<br />
+<h4><a href="/Categories">Start Browsing Categories</a></h4>
+<br />
+<br />
+<p><i> Credit to Frank Liu for the tutorial MVC program I modified. <br/>
+    You can follow along for 15 hours like I did at the following link: <br/>
+    <a href="https://youtu.be/-Pvth0Rv8Cw?si=QrREcOb6SjLIvR-Q">
+        https://youtu.be/-Pvth0Rv8Cw?si=QrREcOb6SjLIvR-Q
+    </a>
+</i></p>
+
+    
+
