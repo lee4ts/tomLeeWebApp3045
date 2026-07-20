@@ -95,3 +95,4 @@
 /Users/tommac/csharp_projects/tomLeeWebApp3045/TomLeeWebApp3045/obj/Debug/net10.0/TomLeeWebApp3045.genruntimeconfig.cache
 /Users/tommac/csharp_projects/tomLeeWebApp3045/TomLeeWebApp3045/obj/Debug/net10.0/ref/TomLeeWebApp3045.dll
 /Users/tommac/csharp_projects/tomLeeWebApp3045/TomLeeWebApp3045/obj/Debug/net10.0/compressed/lco26h3srl-{0}-uhh9u3subq-uhh9u3subq.gz
+/Users/tommac/csharp_projects/tomLeeWebApp3045/TomLeeWebApp3045/obj/Debug/net10.0/TomLeeWebApp3045.sourcelink.json
