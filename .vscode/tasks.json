@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build MyLibrarySQLdb",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"/Users/tommac/csharp_projects/tomLeeWebApp3045/MyLibrarySQLdb/MyLibrarySQLdb.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Builds the MyLibrarySQLdb SQL project"
+		}
+	]
+}

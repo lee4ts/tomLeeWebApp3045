@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TomLeeWebApp3045")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e51a420548ad9bbd308daa1aa60b55dd899e5518")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+00d0762c3ba06a0bf3c6c512291d514e7b4149a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TomLeeWebApp3045")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TomLeeWebApp3045")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
