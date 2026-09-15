@@ -4,6 +4,11 @@ using TomLeeWebApp3045.Models;
 
 namespace TomLeeWebApp3045.Controllers;
 
+/*
+@TODO
+integrate database - categorized / uncategorized
+-> all should update the database.
+*/
 public class CategoriesController : Controller
 {
     public IActionResult Index()
@@ -37,7 +42,7 @@ public class CategoriesController : Controller
         return View(category);
     }
 
-    [HttpPost]
+    [HttpPatch]
     public IActionResult Edit(Category category)
     {
         if (ModelState.IsValid)
@@ -55,7 +60,7 @@ public class CategoriesController : Controller
         return View(category);
     }
 
-    [HttpPost]
+    [HttpDelete]
     public IActionResult Delete(int id)
     {
         CategoriesRepo.DeleteCategory(id);
