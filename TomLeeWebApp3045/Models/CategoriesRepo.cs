@@ -5,7 +5,7 @@ namespace TomLeeWebApp3045.Models
         //categories in this method are seeded as such:
         public static List<Category> _categories = new List<Category>()
         {
-            new Category { CategoryId = 1, Name = "Science" , Description = "Science"},
+            new Category { CategoryId = 1, Name = "Science Fiction" , Description = "Science Fiction"},
             new Category { CategoryId = 2, Name = "History" , Description = "History"},
             new Category { CategoryId = 3, Name = "Technology" , Description = "Technology"},
             new Category { CategoryId = 4, Name = "Art" , Description = "Art"},

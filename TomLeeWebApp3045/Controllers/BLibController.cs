@@ -11,3 +11,42 @@ Controller should have the following methods:
 7) error handling and logging
 */
 
+using Microsoft.AspNetCore.Mvc;
+using TomLeeWebApp3045.Models;
+using TomLeeWebApp3045.Data;
+using TomLeeWebApp3045.Interfaces;
+
+namespace TomLeeWebApp3045.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class BLibController : ControllerBase
+    {
+        private readonly ILogger<BLibController> _logger;
+        private readonly IBLibContextDAO _context;
+
+        public BLibController(ILogger<BLibController> logger, IBLibContextDAO context)
+        {
+            _logger = logger;
+            _context = context;
+        }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            return Ok(_context.GetAllBLibs());
+        }
+
+        [HttpGet]
+        public IActionResult Get(List<int> ids)
+        {
+            var bLib = _context.GetBLibsByIDs(ids);
+            if (bLib == null)
+            {
+                return NotFound();
+            }
+            return Ok(bLib);
+        }
+
+    }
+}
